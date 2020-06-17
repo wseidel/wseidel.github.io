@@ -1,1 +1,0 @@
-# wseidel.github.io
