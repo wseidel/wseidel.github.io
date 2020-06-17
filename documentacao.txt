@@ -2,9 +2,12 @@
 Tema utilizado: 
 - https://github.com/arulrajnet/attila
 
-Artigos que auxiliam no processo:
+Artigos que auxiliam no processo de entendimento e publicação:
 - https://docs.getpelican.com
 - https://docs.getpelican.com/en/stable/publish.html
-- https://docs.getpelican.com/en/stable/content.html
 - https://docs.getpelican.com/en/3.6.3/tips.html#publishing-to-github
 - http://pythonclub.com.br/github-pages-com-pelican-e-travis-ci.html
+
+Artigos que auxilam na elaboração do conteúdo:
+- https://docs.getpelican.com/en/stable/content.html
+- https://github.com/kplaube/blog/tree/master/content/posts
