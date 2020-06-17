@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Wesley Seidel'
 SITENAME = 'Wesley Seidel'
 SITEURL = ''
+# SITEURL = 'https://wseidel.github.io'
 
 PATH = 'content'
 
@@ -33,3 +34,28 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# ARTICLE_URL = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/'
+# ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
+
+ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
+
+
+THEME = "themes/attila"
+
+
+# Do tema
+# SITEIMAGE = 'http://intelidados.com.br/img/InteliDados.png'
+
+DESCRIPTION = 'A functional, clean, responsive theme for Pelican. Heavily ' \
+              'inspired by crowsfoot and clean-blog, powered by Bootstrap.'
+
+ICONS = (
+    ('github', 'https://github.com/nairobilug/pelican-alchemy'),
+    ('twitter', 'https://twitter.com/wseidel'),
+)
+
+
+HIDE_AUTHORS = True
+
