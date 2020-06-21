@@ -2,22 +2,19 @@ language: python
 branches:
   only:
   - develop
-before_install:
-- openssl aes-256-cbc -K $encrypted_120135e51708_key -iv $encrypted_120135e51708_iv
-  -in publish-key.enc -out ~/.ssh/publish-key -d
-- chmod u=rw,og= ~/.ssh/publish-key
-- echo "Host github.com" >> ~/.ssh/config
-- echo "  IdentityFile ~/.ssh/publish-key" >> ~/.ssh/config
-- git remote set-url origin git@github.com:wseidel/wseidel.github.io.git
-- git fetch origin -f master:master
-# env:
-#   global:
-#     secure: kMgj9VkNHf2gHrFJctV/suoQQ+XWvw+QzNhAiWzZKbvpz3mhV+zLyagQcscmG/LZVYS/sU3oIzVMMWsKjGn1aoUXFQd3Iw6bN+i6bVlJGS7WHLKWJqfMoqyDEMUb1GaIzCBTTkvo1gvGA/nkLNdOukP/EwKGi92w6fbvfUOMawvpqMM//kdf8SnFqIJ4BUx6hluzPinxIhNtxVD7EvgxZoBpXaMwWTiCAwjOr9dZ+lvRxACAezp99d+sipPSGHbGVN9UEnus5Qu9xzaZnWoOgF3AG6atuFfsGR2LACgFfRkzs0x2EzU060uWzXIjcdgGl3Tb11cupIcmYTFgeZWhWVknN/rjjx6AbqauKFO+hODVeYtgma0nPv6WsR4NoMYqgUNqPfYecZZWBhzUftrJtRIuW2SR0HIoQ236IB0EDDjOWGCIUHLtv2npZBhO12NFGAvyTiHiHr67fOf8erZLdIzLIF4v/fY5TAnypmGAQJJPXySza/7xXmnlVp5ARHNyJWpLhdBzl6cZaLSkvLSncxy4tvdcZCTqfl/rdePYa4TwegyxLvFdLC4DgZXVT/T+i9UeVvXVcIH39UJM50FpcKE82ZBueJgFtJg21HrY3X4QEeZ9lPZE9G99EOSnMnaSo79VuNGZ2mtBxDZIJ85i1MZY6rrrk3rZzuKBb7NNiKE=
+# before_install:
+# - openssl aes-256-cbc -K $encrypted_120135e51708_key -iv $encrypted_120135e51708_iv
+#   -in publish-key.enc -out ~/.ssh/publish-key -d
+# - chmod u=rw,og= ~/.ssh/publish-key
+# - echo "Host github.com" >> ~/.ssh/config
+# - echo "  IdentityFile ~/.ssh/publish-key" >> ~/.ssh/config
+# - git remote set-url origin git@github.com:wseidel/wseidel.github.io.git
+# - git fetch origin -f master:master
 install:
-# - pip install pelican ghp-import
 - pip install --upgrade pip
 - pip install -r requirements.txt
 script:
 - make publish github
-
-# openssl aes-256-cbc -K $encrypted_591fe46d4973_key -iv $encrypted_591fe46d4973_iv -in publish-key.enc -out ~/.ssh/publish-key -d
+env:
+  global:
+    secure: mnd2qFdTumK4jTmkROYVWLHVi8JjfFim8628qOXN1N6IU2/QyIoATBl9m0eAIEXnj/R6yuC9Dj2iUlZRY0oQ5LIAzq7szUAXcPPFgyqFyWEttJKC6PXIwaN7FAHdQsiixXmq8ufvDwJEJg1lFxUNcnKaOrXmzfGkXS+ZPQrA+TN/MbxaDMP2I6NXCO/+26OiXZtWxTg/2VBrrAp6HX20NS5CxcFz6q/ktIe5VszMt9ic5N/CJl3EHr5UMp2VZN8FTa0yJOgNlsTmBWtSJooHCCcnbiB4I7ZF5j80uA1bUpjG3vrIstHubEjocp6VoEkKJcC4DXda5fgAhkEn10q7sSxpDk5E63dvr5/jkz3QP/dhuJIe0uD8yCK8vWz906wh3Z/7llEdwY0FFFrZGdEsy1LpaT3eX7jpLsOhFS4/WKV4IFUAQOyg/AtVuj7+dcApeJ2QdbWQSt9mKAY9IJNiBLQ2Mv9RmkSdGdAu3/c0zOq3LPTi71FwlgZs+/y2B/vGJQ7aUh/mOtNo8AyS8Ichpktsjb0qAVmeyVRkmlZh8hG3+4Gi0YgWZee1hAMJq0qRtz0NFaf/djLjrNpip6aUozsXWl+B81y6fwNZ3YurUHinkSQoA1TXfCJuE0HYlTwlkYeel3bc4jRGgYOl1hOEuD37ExKJNuBcnjPFYZ5FFzw=
