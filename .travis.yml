@@ -2,14 +2,6 @@ language: python
 branches:
   only:
   - develop
-# before_install:
-# - openssl aes-256-cbc -K $encrypted_120135e51708_key -iv $encrypted_120135e51708_iv
-#   -in publish-key.enc -out ~/.ssh/publish-key -d
-# - chmod u=rw,og= ~/.ssh/publish-key
-# - echo "Host github.com" >> ~/.ssh/config
-# - echo "  IdentityFile ~/.ssh/publish-key" >> ~/.ssh/config
-# - git remote set-url origin git@github.com:wseidel/wseidel.github.io.git
-# - git fetch origin -f master:master
 install:
 - pip install --upgrade pip
 - pip install -r requirements.txt
@@ -17,4 +9,4 @@ script:
 - make publish github
 env:
   global:
-    secure: mnd2qFdTumK4jTmkROYVWLHVi8JjfFim8628qOXN1N6IU2/QyIoATBl9m0eAIEXnj/R6yuC9Dj2iUlZRY0oQ5LIAzq7szUAXcPPFgyqFyWEttJKC6PXIwaN7FAHdQsiixXmq8ufvDwJEJg1lFxUNcnKaOrXmzfGkXS+ZPQrA+TN/MbxaDMP2I6NXCO/+26OiXZtWxTg/2VBrrAp6HX20NS5CxcFz6q/ktIe5VszMt9ic5N/CJl3EHr5UMp2VZN8FTa0yJOgNlsTmBWtSJooHCCcnbiB4I7ZF5j80uA1bUpjG3vrIstHubEjocp6VoEkKJcC4DXda5fgAhkEn10q7sSxpDk5E63dvr5/jkz3QP/dhuJIe0uD8yCK8vWz906wh3Z/7llEdwY0FFFrZGdEsy1LpaT3eX7jpLsOhFS4/WKV4IFUAQOyg/AtVuj7+dcApeJ2QdbWQSt9mKAY9IJNiBLQ2Mv9RmkSdGdAu3/c0zOq3LPTi71FwlgZs+/y2B/vGJQ7aUh/mOtNo8AyS8Ichpktsjb0qAVmeyVRkmlZh8hG3+4Gi0YgWZee1hAMJq0qRtz0NFaf/djLjrNpip6aUozsXWl+B81y6fwNZ3YurUHinkSQoA1TXfCJuE0HYlTwlkYeel3bc4jRGgYOl1hOEuD37ExKJNuBcnjPFYZ5FFzw=
+    secure: YmCl0tsDagkvvtB4jJMkRm8AeA+FD3dUEbVGZlWYI66fIbxz5snD2vA4bgBY6PtLJE6alZDEe05J7j6Kc8jv9KvdPbZdB6VmuZ5cmz6YkZDH40NX/cUC5TcQYoGGQqTrC/Q3lJ4uyCZttt8UBe/tV1Z3AdaMLQU647WJnCYA0NRdlWc+VRYfnBDtfIOxtvi/lF9xmkLfOfCi0h5zAXRKLGQwk5dvPelHBRCSXRG73yFFfRRLklC1J9Z511SdtBGB/hqfQQoieiw2nt8m462kHUA/DmC6C4//CTqcYTxBwpYTe1J2D+XnqoJp18fcPVHhqaiS+FcvSenyS0bxEdn4uewenn9DwfUr2lKuzOvYUQJpt9WR5Nn8ORZAPjeWOGv0OTmQvKHlkelYgo0RWArin179OOshepq9mSNkSbnPjwP046KpFERz2Idq4HZ0oJHXlZ/6RdMtQmA45D0bP1jmNUEA6+LxYd1IKiP1kx88tG/Uf1BvIUTeA+2dzvovsfwfbpMZXIj8u0Hv++x/wtWECyenEs1ox5TFgU7b/qWkhNZylABAHDT1mPGfDghmGQ+80tX8khtk6X56VbksUHAaDuI3GHWSVEsobQb833p178X9pmTTKuKYSHdboiQ5zvrKk6gOaJX0TIfgN8GTt+IAF9hEIWZ+hkjhxI1hpEkfchE=
