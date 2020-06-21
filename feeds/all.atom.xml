@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Wesley Seidel</title><link href="https://wseidel.github.io/" rel="alternate"></link><link href="https://wseidel.github.io/feeds/all.atom.xml" rel="self"></link><id>https://wseidel.github.io/</id><updated>2020-06-20T23:07:00-03:00</updated><entry><title>Meu segundo post</title><link href="https://wseidel.github.io/posts/2020/06/meu-segundo-post/" rel="alternate"></link><published>2020-06-20T23:07:00-03:00</published><updated>2020-06-20T23:07:00-03:00</updated><author><name>Wesley Seidel</name></author><id>tag:wseidel.github.io,2020-06-20:/posts/2020/06/meu-segundo-post/</id><summary type="html">&lt;p&gt;Este é o meu segindo post.
+Vamos ver como ficará.&lt;/p&gt;
+&lt;p&gt;Talvez eu precise testar mais.&lt;/p&gt;
+&lt;p&gt;Mas acho que já está ficando bem legal.&lt;/p&gt;
+&lt;p&gt;There are two ways to specify the identifier:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;The triple-colon syntax will *not* show line numbers.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To display line numbers, use a path-less shebang instead of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Este é o meu segindo post.
+Vamos ver como ficará.&lt;/p&gt;
+&lt;p&gt;Talvez eu precise testar mais.&lt;/p&gt;
+&lt;p&gt;Mas acho que já está ficando bem legal.&lt;/p&gt;
+&lt;p&gt;There are two ways to specify the identifier:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;The triple-colon syntax will *not* show line numbers.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To display line numbers, use a path-less shebang instead of colons:&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;The path-less shebang syntax *will* show line numbers.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</content><category term="Review"></category></entry><entry><title>My First Review</title><link href="https://wseidel.github.io/posts/2010/12/my-first-review/" rel="alternate"></link><published>2010-12-03T10:20:00-03:00</published><updated>2010-12-03T10:20:00-03:00</updated><author><name>Wesley Seidel</name></author><id>tag:wseidel.github.io,2010-12-03:/posts/2010/12/my-first-review/</id><content type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</content><category term="Review"></category></entry></feed>
