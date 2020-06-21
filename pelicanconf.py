@@ -48,6 +48,33 @@ THEME = "themes/attila"
 # Do tema
 # SITEIMAGE = 'http://intelidados.com.br/img/InteliDados.png'
 
+### Theme specific settings
+
+# This is deprecated. Will be removed in future releases.
+# Work around will be use HOME_COVER and use cover in individual articles.
+# HEADER_COVER = 'https://casper.ghost.org/v1.0.0/images/welcome.jpg'
+
+# This is deprecated. Will be removed in future releases.
+# Work around will be use HOME_COLOR and use color in individual articles.
+# HEADER_COLOR = 'black'
+
+# To set background image for the home page.
+# HOME_COVER = 'https://casper.ghost.org/v1.0.0/images/welcome.jpg'
+HOME_COVER = 'theme/images/home-bg.jpg'
+
+
+# Custom Header
+
+HEADER_COVERS_BY_TAG = {
+	'cupcake': 'theme/images/rainbow_cupcake_cover.png', 
+	'general':'theme/images/home-bg.jpg',
+	'Review':'theme/images/home-bg.jpg'
+	}
+
+
+# Do tema
+# SITEIMAGE = 'http://intelidados.com.br/img/InteliDados.png'
+
 DESCRIPTION = 'A functional, clean, responsive theme for Pelican. Heavily ' \
               'inspired by crowsfoot and clean-blog, powered by Bootstrap.'
 
